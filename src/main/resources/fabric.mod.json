@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "end-god",
+	"version": "${version}",
+	"name": "End God",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"GRZ"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/end-god/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.end_god.EndGod"
+		],
+		"client": [
+			"name.end_god.EndGodClient"
+		],
+		"fabric-datagen": [
+			"name.end_god.EndGodDataGenerator"
+		]
+	},
+	"mixins": [
+		"end-god.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
